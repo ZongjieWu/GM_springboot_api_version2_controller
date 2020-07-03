@@ -28,10 +28,4 @@ public class SaasUserLoginController {
         return saasUserLoginService.login(loginRequestVo);
     }
 
-    @ApiOperation(value = "登入2",notes = "登入2")
-    @PostMapping("/login")
-    public Result<SaasUserBaseInfoResponseVo> add2(@Validated SaasUserLoginRequestVo loginRequestVo) {
-        return saasUserLoginService.login(loginRequestVo);
-    }
-
 }
